@@ -28,6 +28,14 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 import os
+
+
+DEBUG = False
+
+ALLOWED_HOSTS = ['.vercel.app', 'localhost']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Application definition
 
 INSTALLED_APPS = [
